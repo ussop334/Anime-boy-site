@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anime Boy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Anime Boy</h1>
+    <p class="tagline">Poems, Thoughts & Dreams of Anime</p>
+  </header>
+
+  <main>
+    <section class="poem">
+      <h2>Straw Hat King</h2>
+      <p>
+        He sails the sea with dreams so high,<br />
+        A straw hat shadow against the sky.<br />
+        Not for gold nor fleeting fame,<br />
+        But for freedom—his eternal flame.<br /><br />
+
+        With a laugh that shakes the fiercest tide,<br />
+        He finds the truth no map can hide.<br />
+        Yonko tremble at his will,<br />
+        But he climbs every mountain still.<br /><br />
+
+        His crew, his bond—no king commands,<br />
+        Yet all the world in awe he stands.<br />
+        For in that smile, brave and wide,<br />
+        Lives the soul of the sea—undying, wild, and free.
+      </p>
+    </section>
+
+    <div class="download-buttons">
+      <p>📥 Download Poem:</p>
+      <a href="Straw_Hat_King.pdf" download class="download-btn">Download PDF</a>
+    </div>
+
+    <div class="share-buttons">
+      <p>Share this poem:</p>
+      <button onclick="shareSite()">🔗 Share</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Anime Boy | Made with ❤️ by Anuj</p>
+  </footer>
+
+  <script>
+    function shareSite() {
+      if (navigator.share) {
+        navigator.share({
+          title: "Anime Boy",
+          text: "Read this amazing anime poem 'Straw Hat King' by Anuj!",
+          url: window.location.href,
+        });
+      } else {
+        alert("Sharing not supported on this device.");
+      }
+    }
+  </script>
+</body>
+</html>
